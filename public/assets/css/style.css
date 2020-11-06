@@ -31,3 +31,14 @@ li {
   h2 {
     font-size: medium;
   }
+
+  h1 {
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+  }
+
+  body {
+    color: white;
+    background-color: #101010;
+  }
