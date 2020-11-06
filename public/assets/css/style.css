@@ -1,7 +1,7 @@
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    /* background: #faebd7; */
   }
   
   .label {
@@ -18,3 +18,16 @@ li {
     margin-bottom: 5px;
   }
   
+  .container {
+    font-family: 'Baskervville', serif;
+
+  }
+
+  button {
+    font-size: small;
+
+  }
+
+  h2 {
+    font-size: medium;
+  }

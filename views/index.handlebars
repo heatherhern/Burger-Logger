@@ -1,30 +1,40 @@
-<h2>Burgers I Want to Eat</h2>
+<div class="container">
+    <div class="row">
 
-<ul>
-    {{#each burgers}}
-    {{#unless eaten}}
-    {{> burgers/burger-block eaten=false}}
-    {{/unless}}
-    {{/each}}
-</ul>
+        <h2>Burgers I Want to Eat</h2>
 
-<h2>Burgers That Have Already Been Eaten:</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if eaten}}
-    {{> burgers/burger-block eaten=true}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="ca">Burger Name:</label>
-        <input type="text" id="ca" name="name">
+        <ul>
+            {{#each burgers}}
+            {{#unless eaten}}
+            {{> burgers/burger-block eaten=false}}
+            {{/unless}}
+            {{/each}}
+        </ul>
     </div>
 
-    <button type="submit">Add</button>
-</form>
+    <div class="row">
+        <h2>Burgers That Have Already Been Eaten:</h2>
+
+        <ul>
+            {{#each burgers}}
+            {{#if eaten}}
+            {{> burgers/burger-block eaten=true}}
+            {{/if}}
+            {{/each}}
+        </ul>
+
+    </div>
+</div>
+<div class="container">
+
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="ca">Burger Name:</label>
+            <input type="text" id="ca" name="name">
+        </div>
+
+        <button type="submit">Add</button>
+    </form>
+</div>
